@@ -2,7 +2,7 @@
 <module rename-to='Index'>
   <!-- Inherit the core Web Toolkit stuff.                        -->
   <inherits name='com.google.gwt.user.User'/>
-  <!-- 导入gwt JUnit依赖模块 -->
+  <!-- 引入gwt JUnit依赖模块，否则项目运行会有测试用例方面的错误抛出 -->
   <inherits name='com.google.gwt.junit.JUnit'/>
 
   <!-- Inherit the default GWT style sheet.  You can change       -->
