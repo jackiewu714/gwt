@@ -77,7 +77,7 @@
             <goals>
               <goal>compile</goal>
               <goal>test</goal>
-              <!-- 此处注释掉 i18n和generateAsync，eclipse插件生成不了，需要手工命令行方式运行 -->
+              <!-- 注释掉 i18n和generateAsync，此处eclipse里面不能通过插件运行，需要手工命令行模式运行 -->
               <!-- <goal>i18n</goal>
               <goal>generateAsync</goal> -->
             </goals>
@@ -90,7 +90,7 @@
           <hostedWebapp>${webappDirectory}</hostedWebapp>
           <!-- 自动生成的i18nMessagesBundle的包名不带client，需手工加上 -->
           <i18nMessagesBundle>com.test.gwtmvntest.client.Messages</i18nMessagesBundle>
-          <skipTests>false</skipTests>
+          <skipTests>true</skipTests>
           <disableCastChecking>true</disableCastChecking>
 		  <disableClassMetadata>true</disableClassMetadata>
 		  <extraJvmArgs>-Xmx1200M -Xss1024k</extraJvmArgs>
